@@ -16,19 +16,20 @@
 
 以下，記述事項の説明．
 
-* Dockerイメージをpullしてrunする手順を具体的に示す．
+* 以下にDockerイメージをpullしてrunする手順を具体的に示す．
 
 ```
-docker pull satoshigeyuki/oss-experiment-uec-2024-example
-docker run -it --rm --name example satoshigeyuki/oss-experiment-uec-2024-example
+docker pull kouki10glow/2024-a2110013-ical4j-time-zone-extension
+docker run -it --rm --name temple kouki10glow/2024-a2110013-ical4j-time-zone-extension
 ```
 
 * コンテナの中に入った後，最低限の動作チェックを行う方法を示す．
 * シングルコマンドであることが望ましい．
-  + 例えば，`make` を使う．
+  + 以下の操作を行ったところエラーが出力された.
 
 ```
-make check
+cd 2024-a2110013-ical4j-time-zone-extension
+gradle test
 ```
 
 ## 評価手順
