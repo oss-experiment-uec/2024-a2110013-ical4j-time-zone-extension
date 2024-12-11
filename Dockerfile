@@ -5,6 +5,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
     echo $TZ > /etc/timezone
 RUN apt update && apt upgrade -y
 
+WORKDIR /artifact
+
 # 必要なAPTパッケージを適当にインストール
 RUN apt update && apt install -y less git vim gradle
 #libcommons-lang3-java default-jdk 
