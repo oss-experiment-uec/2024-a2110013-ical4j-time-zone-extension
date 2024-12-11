@@ -8,7 +8,7 @@ RUN apt update && apt upgrade -y
 WORKDIR /artifact
 
 # 必要なAPTパッケージを適当にインストール
-RUN apt update && apt install -y less git vim gradle
+RUN apt update && apt install -y less git vim gradle make
 #libcommons-lang3-java default-jdk 
 
 # Gitリポジトリを展開しても良い
