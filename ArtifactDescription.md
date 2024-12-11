@@ -28,7 +28,6 @@ docker run -it --rm --name temple kouki10glow/2024-a2110013-ical4j-time-zone-ext
   + 以下の操作を行ったところエラーが出力された.
 
 ```
-cd 2024-a2110013-ical4j-time-zone-extension
 gradle test
 ```
 
